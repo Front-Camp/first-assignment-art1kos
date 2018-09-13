@@ -8,7 +8,13 @@
  * turnMeBaby('Some text'); // 'txet emoS'
  */
 const turnMeBaby = str => {
-  /* your logic here...*/
+	if(isNaN(str)){
+  		return str.split("").reverse().join("");
+  		console.log(str);
+  	}else{
+    console.log("This is not a string")
+  	}
+	
 };
 
 export default turnMeBaby;
